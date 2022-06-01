@@ -18,12 +18,15 @@ This page is suitable for lucky draw in parties!
    *maximum range limit: 0 to 100,000
    <br>
 <img src="images/intro1.png" alt="" width="350px">
+
 2. Click "Draw" to draw a number.
   <br>
 <img src="images/intro3.png" alt="" width="350px">
+
 3. After a number is drawn, you can click "next" to draw the next number. All numbers drawn are not repeated. 
   <br>
 <img src="images/intro4.png" alt="" width="350px">
+
 4. The list of drawn numbers can be found in the "Drawn Record" section. By clicking the "Reset Drawn" button, the drawn record will be cleared.
   <br>
 <img src="images/intro5.png" alt="" width="350px">
@@ -47,9 +50,11 @@ This page is suitable for lucky draw in parties!
 3. Click "Draw" to draw a name/ pair of names.
   <br>
 <img src="images/intro3.png" alt="" width="350px"> <img src="images/intro13.png" alt="" width="350px">
+
 4. After a name/pair of names is drawn, you can click "next" to draw the next name/pairs.
   <br>
 <img src="images/intro10.png" alt="" width="350px"> <img src="images/intro14.png" alt="" width="350px">
+
 5. The list of drawn names can be found in the "Drawn Record" section. By clicking the "Reset Drawn" button, the drawn record will be cleared.
   <br>
 <img src="images/intro15.png" alt="" width="350px">
