@@ -49,11 +49,11 @@ This page is suitable for lucky draw in parties!
 
 3. Click "Draw" to draw a name/ pair of names.
   <br>
-<img src="images/intro3.png" alt="" width="350px"> <img src="images/intro13.png" alt="" width="350px">
+<img src="images/intro3.png" alt="" width="350px">&nbsp;&nbsp;<img src="images/intro13.png" alt="" width="350px">
 
 4. After a name/pair of names is drawn, you can click "next" to draw the next name/pairs.
   <br>
-<img src="images/intro10.png" alt="" width="350px"> <img src="images/intro14.png" alt="" width="350px">
+<img src="images/intro10.png" alt="" width="350px">&nbsp;&nbsp;<img src="images/intro14.png" alt="" width="350px">
 
 5. The list of drawn names can be found in the "Drawn Record" section. By clicking the "Reset Drawn" button, the drawn record will be cleared.
   <br>
