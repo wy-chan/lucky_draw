@@ -57,4 +57,4 @@ This page is suitable for lucky draw in parties!
 
 5. The list of drawn names can be found in the "Drawn Record" section. By clicking the "Reset Drawn" button, the drawn record will be cleared.
   <br>
-<img src="images/intro15.png" alt="" width="350px">
+<img src="images/intro11.png" alt="" width="350px">&nbsp;&nbsp;<img src="images/intro15.png" alt="" width="350px">
