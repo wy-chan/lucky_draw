@@ -1,0 +1,883 @@
+@keyframes ballanim {
+    0% {
+        font-size: 0px;
+        line-height: 0px;
+        height: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 0px;
+    }
+
+    100% {
+
+        font-size: 64px;
+        line-height: 80px;
+        height: 80px;
+        padding-top: 88px;
+        padding-bottom: 88px;
+        width: 257px;
+
+    }
+}
+@keyframes luckycarddivanim {
+    0% {
+        top:140px;
+        padding-top: 0px;
+        height: 0px;
+    }
+    100% {
+        top:0;
+        padding-top: 70px;
+        height: 210px;
+    }
+}
+@keyframes underlineanim{
+    0%{
+        width:0px;
+    }
+    30%{
+        width:0px;
+    }
+    100%{
+        width:324px;
+    }
+}
+@keyframes appearanim{
+    0% {
+        opacity: 0;
+    }
+   30% {
+        opacity: 0;
+    }
+    100% {
+        
+        opacity:1;
+    }
+}
+@keyframes ballboxanim {
+    0% {
+        transform: rotate(360deg);
+        height: 0px;
+        width: 0px;
+        left: 167px;
+        top: 150px;
+    }
+
+    40% {
+        top: 0px;
+    }
+
+    70% {
+        top: 50px;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        width: 257px;
+        height: 255px;
+
+        top: 32px;
+        left: 38.5px;
+    }
+}
+
+@keyframes ballboxbganim {
+    0% {
+        opacity: 1
+    }
+
+    30% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes ballshadow {
+    0% {
+        box-shadow: 0px 0px 30px rgba(255, 243, 132, 0.5);
+    }
+
+    50% {
+        box-shadow: 0px 0px 80px rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        box-shadow: 0px 0px 30px rgba(255, 243, 132, 0.5);
+    }
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #333333;
+    background: linear-gradient(180deg, rgba(51, 51, 51, 0.7) 0%, rgba(51, 51, 51, 0) 100%), repeating-linear-gradient(90deg, #333333 0px, #333333 150px, #383838 150px, #383838 300px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/stars_bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 38px;
+    min-width: 800px;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.delete-icon:hover,
+button:hover:enabled,
+a:hover:enabled,
+input[type='radio']:hover:enabled,
+.home-btn-active:hover {
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]:focus:enabled,
+input[type=number]:hover:enabled,
+input[type=text]:focus:enabled,
+input[type=text]:hover:enabled {
+    outline: none;
+    box-shadow: 0px 0px 10px #bbbbbb;
+    border: 1px solid #bbbbbb;
+}
+
+input[type=number],
+input[type=text] {
+    height: 52px;
+    background: #555555;
+    border-radius: 5px;
+    border: none;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 24px;
+    border: 1px solid transparent;
+}
+
+input[type='radio']::after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: #333333;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+input[type='radio'] {
+    height: 20px;
+    margin-right: 20px;
+}
+
+input[type='radio']:hover:enabled:after {
+    filter: drop-shadow(0px 0px 5px #bbbbbb);
+}
+
+input[type='radio']:checked:after {
+    background: #ddd;
+}
+
+input[type='radio']:disabled:after {
+    border: 1px solid #666;
+}
+
+input[type='radio']:checked:disabled:after {
+
+    background: #777;
+
+}
+
+label span {
+    line-height: 28px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.material-icons {
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.home-btn {
+    position: relative;
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    margin-top: 45px;
+    margin-bottom: 0;
+    font-family: 'Aclonica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 19px #FFD80B;
+}
+
+h1::after {
+    content: "Lucky Draw";
+    color: rgba(255, 214, 0, 0.1);
+
+    text-shadow: 0px 0px 20px rgba(255, 214, 0, 0.3);
+    position: absolute;
+    left: 6px;
+    top: 108px;
+    font-size: 110px;
+    transform: perspective(380px) rotateX(-110deg);
+    -webkit-transform: perspective(380px) rotateX(-110deg);
+    -moz-transform: perspective(380px) rotateX(-110deg);
+}
+
+h2 {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #FFFFFF;
+    margin: 0 auto 49px auto;
+}
+
+h3 {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    margin: 0;
+    text-align: left;
+}
+
+h4 {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    text-align: left;
+}
+
+.boxes {
+    width: 800px;
+    border: 3px solid #FFFFFF;
+    border-radius: 15px;
+    position: relative;
+
+    margin-top: 50px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+
+.box-shadow {
+    border-radius: 15px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: -1;
+    width: 800px;
+    height: 100%;
+}
+
+.range-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-icon {
+    color: #FF6868;
+}
+
+.start-btn {
+    padding: 0 5px 0 24px;
+    height: 29px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    height: 52px;
+    background: #FFD80B;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0px 0px 19px #FFD80B;
+}
+
+.start-btn:enabled:hover {
+    box-shadow: 0px 0px 30px #FFD80B;
+}
+
+.start-btn-L {
+    padding: 5px 5px 0 24px;
+    font-weight: 700;
+    font-size: 36px;
+    width: 200px;
+    height: 80px;
+    color: #555555;
+    background: linear-gradient(180deg, #FFF2AB 0%, #FFC700 60.42%);
+}
+
+.start-btn-L:disabled {
+    opacity: 0.5;
+}
+
+.start-btn-L>.material-icons {
+    height: 53px;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.number-box {
+    box-shadow: 0px 0px 15px #FF9900;
+}
+
+.name-box {
+    box-shadow: 0px 0px 15px #FF6464;
+}
+
+.number-box-shadow {
+    box-shadow: 0px 0px 15px rgba(255, 124, 3, 0.7);
+}
+
+.name-box-shadow {
+    box-shadow: 0px 0px 15px #FF6464;
+}
+
+.number-box h2 {
+    text-shadow: 0px 0px 21px #FF9900;
+}
+
+.name-box h2 {
+    text-shadow: 0px 0px 21px #FF6464;
+}
+
+.name-list-top {
+    display: flex;
+    width: 757px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-list-top .addname-btn {
+    margin: 0;
+}
+
+.range-text {
+    font-weight: 500;
+}
+
+.range-input {
+    width: 150px;
+    line-height: 39px;
+    font-size: 32px;
+    border: none;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0px 30px;
+    padding: 6px auto;
+    font-weight: 400;
+    line-height: 39px;
+    font-size: 32px;
+}
+
+.name-info-box {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 50px;
+    padding-left: 50px;
+
+}
+
+#edit-names h2 {
+    margin-bottom: 10px;
+}
+
+.name-setting-div,
+.namelist {
+    width: 310px;
+}
+
+.name-setting-div {
+    text-align: left;
+}
+
+.name-input {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.name-input::-webkit-input-placeholder {
+    /* Edge */
+    font-family: Montserrat;
+    color: #aaaaaa;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.name-input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-family: Montserrat;
+    color: #aaaaaa;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.name-input::placeholder {
+    font-family: Montserrat;
+    color: #aaaaaa;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.name-tag {
+    width: 325px;
+    height: 52px;
+    background: rgba(136, 136, 136, 0.17);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 12px;
+    margin-bottom: 18px;
+}
+
+.add-btn {
+    border: none;
+    width: 355px;
+}
+
+.addname-btn {
+    height: 52px;
+    width: 130px;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    background: none;
+    filter: drop-shadow(0px 0px 15px #FF6464);
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+    margin-top: 24px;
+}
+
+.addname-btn:hover {
+    box-shadow: 0px 0px 15px #FF6464;
+}
+
+.mode-form {
+    margin-top: 70px;
+}
+
+.mode-form .start-btn {
+    margin-top: 70px;
+}
+
+.add-icon {
+    width: 100%;
+    color: #888888;
+}
+
+.lucky-box-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 440px;
+    column-gap: 40px;
+}
+
+.range-box {
+    box-shadow: 0px 0px 15px #ac8f00;
+}
+
+.record-box {
+    box-shadow: 0px 0px 15px #00887f;
+}
+
+.record-box h3 {
+    text-shadow: 0px 0px 15px #00887f;
+    margin-left: 46px;
+}
+
+.range-box-shadow {
+    box-shadow: 0px 0px 15px #ac8f00;
+}
+
+.record-box-shadow {
+    box-shadow: 0px 0px 15px #00887f;
+}
+
+.notes {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 46px;
+    color: #aaaaaa;
+}
+
+.name-form .notes,
+.namelist .notes {
+    margin-left: 0;
+
+}
+
+.number-box .notes {
+    margin-top: -20px;
+}
+
+.list-box {
+    box-shadow: 0px 0px 15px #FF9292;
+}
+
+.list-box h3 {
+    text-shadow: 0px 0px 15px #FF9292;
+}
+
+.list-box-shadow {
+    box-shadow: 0px 0px 15px #FF9292;
+}
+
+.edit-btn {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 130px;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    background: none;
+    filter: drop-shadow(0px 0px 15px #FFD600);
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+}
+
+.edit-btn:hover {
+    box-shadow: 0px 0px 15px #FFD600;
+}
+
+.nums-group {
+    margin-left: 46px;
+    display: flex;
+    column-gap: 36px;
+    row-gap: 24px;
+    width: 708px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.nums-drawn {
+    width: 150px;
+    background: rgba(136, 136, 136, 0.17);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 32px;
+}
+
+.no-result-text {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.names-result-group .no-result-text {
+    width: 90%;
+
+}
+
+.reset-btn {
+    font-family: 'Montserrat';
+    color: #333333;
+    background: #FF7D7D;
+    width: 300px;
+    height: 52px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 24px;
+    border: none;
+}
+
+.reset-btn:hover {
+    background: #bb3a3a;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.luckyball-div {
+    position: relative;
+    height: 319px;
+    width: 334px;
+
+}
+
+.luckyball-bg {
+    height: 319px;
+    width: 334px;
+    animation-name: ballboxbganim;
+    animation-duration: 1.8s;
+    background: url(images/luckybox.svg);
+    opacity: 0;
+    position: absolute;
+    top:0;
+    z-index: -2;
+}
+.luckycard-div-div .luckyball-bg{
+    left:24px;
+    top:-20px;
+}
+.luckycard-div-div .box-img{
+    margin-top:-20px;
+}
+.luckyball-box {
+    position: absolute;
+    top: 32px;
+    left: 38.5px;
+    height: 255px;
+    width: 257px;
+    animation-name: ballboxanim;
+    animation-duration: 1.5s;
+}
+
+.luckyball {
+    position: absolute;
+    margin: 0;
+    animation-name: ballanim;
+    animation-duration: 1.5s;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    color: #333333;
+    line-height: 80px;
+    height: 80px;
+    padding-top: 88px;
+    padding-bottom: 88px;
+    border-radius: 50%;
+    width: 257px;
+    background: linear-gradient(159.38deg, #FFDE6A 14.68%, #DF8E43 86.38%);
+    box-shadow: inset -40px -40px 90px rgba(0, 0, 0, 0.25), inset 17px 22px 40px rgba(255, 255, 255, 0.25);
+
+}
+.luckyball::after, .luckycard-div::after {
+    content: " ";
+    margin: 0;
+    animation-name: ballshadow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: 0;
+    z-index: -1;
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 243, 132, 0.5);
+}
+.luckyball::after {
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px rgba(255, 243, 132, 0.5);
+    animation-name: ballshadow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.luckycard-div::after{
+    border-radius: 15px;
+}
+.luckycard-div-div {
+    position: relative;
+    height: 280px;
+    width: 380px;
+  
+}
+.luckycard-div {
+    animation-name: luckycarddivanim;
+    animation-duration: 1.5s;
+    position: absolute;
+    top:0;
+    width: 380px;
+    height: 210px;
+    background: linear-gradient(141.43deg, rgba(0, 0, 0, 0.8) 12.67%, rgba(66, 53, 21, 0.8) 87.51%);
+    border-radius: 15px;
+    padding-top: 70px;
+}
+
+.luckycard {
+    text-shadow: 0px 0px 15px #FFD600;
+    font-family: 'DM Mono';
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    animation-name: appearanim;
+    animation-duration: 1.5s;
+}
+
+.luckyname {
+    width: 324px;
+    height: 46px;
+    font-size: 36px;
+    margin-top: 50px;
+    padding-left: 28px;
+    padding-right: 28px;
+    font-family: 'Dosis';
+}
+
+.underline-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    align-items: center;
+}
+
+.underline {
+    border-bottom: 2px solid #888888;
+    width: 324px;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+    animation-name: underlineanim;
+    animation-duration: 2.5s;
+}
+
+.underline-cap {
+    height: 0px;
+    width: 8px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 8px solid #888888;
+    transform: rotate(45deg);
+}
+
+.mode-select {
+    display: flex;
+    margin: 0;
+    column-gap: 25px;
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.mode-select label {
+    margin: 0;
+    width: 190px;
+}
+
+.mode-select p {
+    margin: 0;
+    width: 80px;
+}
+
+.mode-form-s {
+    display: flex;
+    align-items: center;
+    margin-left: 68px;
+    column-gap: 55px;
+    margin-top: -12px;
+    margin-bottom: -12px;
+
+}
+
+.name-box h3 {
+    margin-left: 73px;
+}
+
+.names-result-group {
+    margin-top: 22px;
+    margin-bottom: 80px;
+    margin-left: 73px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 39px;
+    row-gap: 24px;
+}
+
+.list-box .names-result-group {
+    margin-bottom: 30px;
+}
+
+.names-drawn {
+    width: 293px;
+    height: 52px;
+    background: rgba(136, 136, 136, 0.17);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.delete-btn {
+    padding: 0;
+    background: none;
+    border: none;
+}
+.pair-name-div{
+    display: flex;
+    align-items: center;
+}
+.pair-name-link{
+    width:40px;
+    height: 10px;
+    background: rgba(136, 136, 136, 0.17);
+}
+
+footer {
+    color: #888888;
+    min-width: 800px;
+    width: 100%;
+    text-align: center;
+    padding-top: 220px;
+    padding-bottom: 50px;
+
+}
+
+footer em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+footer a,
+footer a:visited {
+    color: #888888
+}
