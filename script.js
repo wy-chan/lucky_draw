@@ -29,6 +29,7 @@ class MyApp extends React.Component {
         this.addName = this.addName.bind(this);
         this.focusNewName = this.focusNewName.bind(this);
         this.delName = this.delName.bind(this);
+        this.resetNamelist = this.resetNamelist.bind(this);
     }
 
     componentDidMount() {
@@ -213,7 +214,11 @@ class MyApp extends React.Component {
         document.getElementById("new-name").focus();
 
     }
-
+    resetNamelist(){
+        this.setState({
+            nameList:[]
+        })
+    }
 
 
     render() {
@@ -243,6 +248,7 @@ class MyApp extends React.Component {
                                 pair={this.state.pair}
                                 delName={this.delName}
                                 toPageOneName={this.toPageOneName}
+                                resetNamelist={this.resetNamelist}
                             />
                         </div> :
                         (this.state.mode == "number") ?
@@ -372,10 +378,12 @@ class RandomNames extends React.Component {
                                 add
                             </span>
                         </button>
-                        {(this.props.nameList.length < 6) ? [...Array(6 - this.props.nameList.length)].map((e, i) =>
+                        {(this.props.nameList.length < 5) ? [...Array(5 - this.props.nameList.length)].map((e, i) =>
                             <div key={i} className="name-tag" />
                         ) : null}
-
+                <button className="reset-btn" onClick={this.props.resetNamelist}>
+                    Reset Name List
+                </button>
                     </div>
                 </div>
                 <div className="name-box-shadow box-shadow"></div>
