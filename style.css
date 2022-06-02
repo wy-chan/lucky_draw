@@ -555,7 +555,9 @@ h4 {
     margin-left: 0;
 
 }
-
+.name-box .notes{
+    margin-left: 70px;
+}
 .number-box .notes {
     margin-top: -20px;
 }

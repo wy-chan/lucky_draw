@@ -35,6 +35,8 @@ class MyApp extends React.Component {
     componentDidMount() {
         window.addEventListener("scroll", this.resizeHeaderOnScroll);
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+  
     }
 
     makeNumPool() {
@@ -219,9 +221,13 @@ class MyApp extends React.Component {
             nameList:[]
         })
     }
+    
 
 
     render() {
+
+        
+
         return (
             <main>
 
@@ -561,6 +567,7 @@ class NameRecord extends React.Component {
         return (
             <div className="boxes record-box name-box">
                 <h3>Drawn Record:</h3>
+                <p className="notes">*Names drawn are not repeated.</p>
                 <div className="names-result-group">
                     {(result.length == 0) ?
                         <p className="no-result-text">No numbers are drawn.</p> :
